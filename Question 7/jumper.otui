@@ -1,0 +1,13 @@
+JumperWindow < MainWindow
+  id: jumperWindow
+  !text: tr('Jumper Window')
+  size: 500 400
+  @onEscape: self:destroy()
+
+  Button
+    id: jumpButton
+    !text: tr('Jump!')
+    width: 90
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    @onClick: modules.jumper.onJumpButtonClick()

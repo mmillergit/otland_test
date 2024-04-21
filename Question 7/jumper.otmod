@@ -1,0 +1,9 @@
+Module
+  name: jumper
+  description: A window with a button that jumps around
+  author: Michael Miller
+  website:
+  sandboxed: true
+  scripts: [ jumper ]
+  @onLoad: init()
+  @onUnload: terminate()
